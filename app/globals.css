@@ -2,29 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
 .button {
   transition: background-color 0.5s ease;
@@ -32,4 +9,26 @@ body {
 
 .button-active {
   background-color: #fcf7e7; /* Replace with your active color */
+}
+.image-container {
+  position: relative;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Align with the bottom */
+  left: 0;
+  right: 0;
+  height: 50%; /* Height of the gradient effect */
+  background: radial-gradient(
+      farthest-side at 50% 100%, 
+      transparent, 
+      #000 100%,
+  );
+  /* Adjust the color to match your background */
 }
