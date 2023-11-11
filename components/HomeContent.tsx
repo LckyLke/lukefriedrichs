@@ -1,5 +1,7 @@
 import React from 'react';
 import SecitonWrapper from './SectionWrapper';
+import Image from 'next/image';
+import me from '../images/me.png';
 
 const HomeContent = () => {
   return (
@@ -12,6 +14,14 @@ const HomeContent = () => {
           Web Developer | Computer Science Graduate
         </p>
       </section>
+      <Image
+        src={me}
+        alt="Picture of me"
+        width={450}
+        height={600}
+        quality={100}
+        className=" rounded-full mix-blend-multiply"
+      />
     </SecitonWrapper>
   );
 };
