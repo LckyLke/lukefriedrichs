@@ -25,3 +25,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.button {
+  transition: background-color 0.5s ease;
+}
+
+.button-active {
+  background-color: #fcf7e7; /* Replace with your active color */
+}

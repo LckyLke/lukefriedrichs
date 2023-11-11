@@ -1,8 +1,9 @@
 import React from 'react';
+import SecitonWrapper from './SectionWrapper';
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-blue-500 text-white p-8">
+    <SecitonWrapper id="contact">
       <h2 className="text-4xl font-bold text-center mb-8">Contact Me</h2>
       <form className="max-w-lg mx-auto">
         <div className="mb-4">
@@ -21,7 +22,7 @@ const Contact = () => {
           <label htmlFor="message" className="block mb-2">
             Message
           </label>
-          <textarea id="message" className="w-full p-2" rows="4"></textarea>
+          <textarea id="message" className="w-full p-2"></textarea>
         </div>
         <button
           type="submit"
@@ -30,7 +31,7 @@ const Contact = () => {
           Send
         </button>
       </form>
-    </section>
+    </SecitonWrapper>
   );
 };
 

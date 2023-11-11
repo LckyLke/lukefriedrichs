@@ -1,14 +1,18 @@
-// components/About.tsx
+import SecitonWrapper from './SectionWrapper';
+
 const About = () => {
   return (
-    <section className="text-center p-10">
-      <h2 className="text-4xl font-semibold mb-4">About Me</h2>
-      <p className="text-lg">
-        Hi, I'm Luke Friedrichs, a Computer Science graduate with a passion for
-        building web applications that make a difference. I love to explore new
-        technologies and push the boundaries of what's possible on the web.
-      </p>
-    </section>
+    <SecitonWrapper id="about">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-4xl font-bold">About Me</h2>
+        <p className="mt-4">
+          I'm a passionate Web Developer with a Bachelor's degree in Computer
+          Science. I love building responsive and interactive web applications.
+          My journey in coding started in high school and has been an exciting
+          adventure ever since.
+        </p>
+      </div>
+    </SecitonWrapper>
   );
 };
 
