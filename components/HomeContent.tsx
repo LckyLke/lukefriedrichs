@@ -4,6 +4,7 @@ import Image from 'next/image';
 import me from '../images/me.png';
 import { Canvas } from '@react-three/fiber';
 import ThreeDText from './ThreeDText';
+import Box from './Box';
 const HomeContent = () => {
   return (
     <SecitonWrapper id="home">
@@ -18,7 +19,7 @@ const HomeContent = () => {
       <Canvas>
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
-        <ThreeDText />
+        <Box position={[0, 0, 0]} />
       </Canvas>
       <div className="image-container">
         <Image
