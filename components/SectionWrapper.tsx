@@ -1,7 +1,7 @@
 import React from 'react';
 import { SectionType } from '@/types/types';
 
-const SecitonWrapper = ({
+const SectionWrapper = ({
   children,
   bgColor,
   id,
@@ -13,11 +13,13 @@ const SecitonWrapper = ({
   return (
     <section
       id={id}
-      className={'h-screen flex justify-center items-center ' + bgColor}
+      className={
+        'h-screen flex justify-center items-center scrollItem ' + bgColor
+      }
     >
       {children}
     </section>
   );
 };
 
-export default SecitonWrapper;
+export default SectionWrapper;

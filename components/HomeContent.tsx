@@ -1,20 +1,26 @@
 import React from 'react';
-import SecitonWrapper from './SectionWrapper';
+import SectionWrapper from './SectionWrapper';
 import Image from 'next/image';
 import me from '../images/me.png';
 import { Canvas } from '@react-three/fiber';
 import ThreeDText from './ThreeDText';
 import Box from './Box';
+import TextGrowOnHover from './TextGrowOnHover';
 const HomeContent = () => {
   return (
-    <SecitonWrapper id="home">
+    <SectionWrapper id="home">
       <section className="flex flex-col items-center justify-center min-h-screen text-gray-800">
-        <h1 className="text-6xl font-bold">
-          Hello, I'm <span className="text-blue-600">Luke Friedrichs</span>
-        </h1>
-        <p className="mt-4 text-xl">
-          Web Developer | Computer Science Graduate
-        </p>
+        <div className="text-6xl font-bold">
+          <TextGrowOnHover text="Hello world, I'm" />
+          <TextGrowOnHover text="Luke Friedrichs" />
+        </div>
+        <div className="mt-4 text-xl">
+          <TextGrowOnHover
+            text="
+          Web Developer | Computer Science Graduate 
+          "
+          />
+        </div>
       </section>
       <Canvas>
         <ambientLight />
@@ -31,7 +37,7 @@ const HomeContent = () => {
           className=" "
         />
       </div>
-    </SecitonWrapper>
+    </SectionWrapper>
   );
 };
 

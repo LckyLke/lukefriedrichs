@@ -15,6 +15,7 @@ const Navbar = ({
     const sectionElement = document.getElementById(sectionId);
     if (sectionElement) {
       sectionElement.scrollIntoView({ behavior: 'smooth' });
+      setSection(sectionId);
     } else {
       console.warn(`Element with ID '${sectionId}' not found.`);
     }

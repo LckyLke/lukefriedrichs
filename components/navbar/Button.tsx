@@ -9,7 +9,7 @@ const Button = ({ text, active, onClick }: NavButtonProps) => {
         <p
           className={
             ' text-text-main font-bold hover:bg-button-color-dark py-2 px-4 rounded-md button ' +
-            (active && 'button-active')
+            (active ? 'button-active' : ' text-white')
           }
         >
           {text}

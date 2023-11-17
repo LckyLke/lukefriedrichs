@@ -1,8 +1,7 @@
-import SecitonWrapper from './SectionWrapper';
-
+import SectionWrapper from './SectionWrapper';
 const Projects = () => {
   return (
-    <SecitonWrapper id="projects">
+    <SectionWrapper id="projects">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center">Projects</h2>
         <div className="flex flex-wrap justify-center mt-8">
@@ -23,7 +22,7 @@ const Projects = () => {
           {/* Repeat for other projects */}
         </div>
       </div>
-    </SecitonWrapper>
+    </SectionWrapper>
   );
 };
 

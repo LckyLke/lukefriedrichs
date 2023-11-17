@@ -32,3 +32,51 @@
   );
   /* Adjust the color to match your background */
 }
+
+.mainpage {
+}
+
+
+
+
+/* For Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE and Edge */
+body {
+    -ms-overflow-style: none;
+}
+
+/* For Firefox */
+body {
+    scrollbar-width: none;
+}
+
+.scrollContainer {
+  width: 400vw; /* This can vary depending on your content */
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  background-color: #181818;
+
+}
+
+.scrollItem {
+  flex: 0 0 auto; /* Prevent items from stretching */
+  width: 100vw;
+  /* Add more styling as needed */
+}
+.grow-text {
+  display: inline-block;
+}
+
+.grow-letter {
+  display: inline-block;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+

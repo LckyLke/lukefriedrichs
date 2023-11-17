@@ -1,9 +1,8 @@
 import React from 'react';
-import SecitonWrapper from './SectionWrapper';
-
+import SectionWrapper from './SectionWrapper';
 const Contact = () => {
   return (
-    <SecitonWrapper id="contact">
+    <SectionWrapper id="contact">
       <h2 className="text-4xl font-bold text-center mb-8">Contact Me</h2>
       <form className="max-w-lg mx-auto">
         <div className="mb-4">
@@ -31,7 +30,7 @@ const Contact = () => {
           Send
         </button>
       </form>
-    </SecitonWrapper>
+    </SectionWrapper>
   );
 };
 

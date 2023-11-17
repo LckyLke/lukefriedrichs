@@ -1,8 +1,7 @@
-import SecitonWrapper from './SectionWrapper';
-
+import SectionWrapper from './SectionWrapper';
 const About = () => {
   return (
-    <SecitonWrapper id="about">
+    <SectionWrapper id="about">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-bold">About Me</h2>
         <p className="mt-4">
@@ -12,7 +11,7 @@ const About = () => {
           adventure ever since.
         </p>
       </div>
-    </SecitonWrapper>
+    </SectionWrapper>
   );
 };
 

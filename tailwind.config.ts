@@ -16,7 +16,7 @@ const config: Config = {
       colors: {
         'button-color': '#fcf7e7',
         background: '#112030',
-        'text-main': '#112030',
+        'text-main': '#181818',
       },
     },
   },
