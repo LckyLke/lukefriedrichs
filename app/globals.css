@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.button {
+  transition: background-color 0.5s ease;
+}
+
+.button-active {
+  background-color: #fcf7e7; /* Replace with your active color */
+}
+.image-container {
+  position: relative;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Align with the bottom */
+  left: 0;
+  right: 0;
+  height: 50%; /* Height of the gradient effect */
+  background: radial-gradient(
+      farthest-side at 50% 100%, 
+      transparent, 
+      #000 100%,
+  );
+  /* Adjust the color to match your background */
+}
+
+.mainpage {
+}
+
+
+
+
+/* For Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE and Edge */
+body {
+    -ms-overflow-style: none;
+}
+
+/* For Firefox */
+body {
+    scrollbar-width: none;
+}
+
+.scrollContainer {
+  width: 100vw; /* This can vary depending on your content */
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #181818;
+}
+
+.scrollItem {
+  flex: 0 0 auto; /* Prevent items from stretching */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Add more styling as needed */
+}
+
+.innerScrollItem {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grow-text {
+  display: inline-block;
+}
+
+.grow-letter {
+  display: inline-block;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+@keyframes activeWiggle {
+  0%, 100% { transform: rotate(-3deg) translateY(-50%); }
+  50% { transform: rotate(3deg) translateY(-50%); }
+}
+
+.wiggle {
+  transform-origin: center;
+}
+.wiggle:hover {
+  animation: activeWiggle 0.6s ease-in-out infinite;
+}
+
+
