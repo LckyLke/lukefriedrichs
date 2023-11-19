@@ -1,9 +1,0 @@
-C:\Users\lukef\Desktop\nextjs projects\lukefriedrichs\rust_backend\backend\target\debug\deps\aws_smithy_xml-4abeb3132f8749a0.rmeta: C:\Users\lukef\.cargo\registry\src\index.crates.io-6f17d22bba15001f\aws-smithy-xml-0.38.0\src\lib.rs C:\Users\lukef\.cargo\registry\src\index.crates.io-6f17d22bba15001f\aws-smithy-xml-0.38.0\src\decode.rs C:\Users\lukef\.cargo\registry\src\index.crates.io-6f17d22bba15001f\aws-smithy-xml-0.38.0\src\encode.rs C:\Users\lukef\.cargo\registry\src\index.crates.io-6f17d22bba15001f\aws-smithy-xml-0.38.0\src\escape.rs C:\Users\lukef\.cargo\registry\src\index.crates.io-6f17d22bba15001f\aws-smithy-xml-0.38.0\src\unescape.rs
-
-C:\Users\lukef\Desktop\nextjs projects\lukefriedrichs\rust_backend\backend\target\debug\deps\aws_smithy_xml-4abeb3132f8749a0.d: C:\Users\lukef\.cargo\registry\src\index.crates.io-6f17d22bba15001f\aws-smithy-xml-0.38.0\src\lib.rs C:\Users\lukef\.cargo\registry\src\index.crates.io-6f17d22bba15001f\aws-smithy-xml-0.38.0\src\decode.rs C:\Users\lukef\.cargo\registry\src\index.crates.io-6f17d22bba15001f\aws-smithy-xml-0.38.0\src\encode.rs C:\Users\lukef\.cargo\registry\src\index.crates.io-6f17d22bba15001f\aws-smithy-xml-0.38.0\src\escape.rs C:\Users\lukef\.cargo\registry\src\index.crates.io-6f17d22bba15001f\aws-smithy-xml-0.38.0\src\unescape.rs
-
-C:\Users\lukef\.cargo\registry\src\index.crates.io-6f17d22bba15001f\aws-smithy-xml-0.38.0\src\lib.rs:
-C:\Users\lukef\.cargo\registry\src\index.crates.io-6f17d22bba15001f\aws-smithy-xml-0.38.0\src\decode.rs:
-C:\Users\lukef\.cargo\registry\src\index.crates.io-6f17d22bba15001f\aws-smithy-xml-0.38.0\src\encode.rs:
-C:\Users\lukef\.cargo\registry\src\index.crates.io-6f17d22bba15001f\aws-smithy-xml-0.38.0\src\escape.rs:
-C:\Users\lukef\.cargo\registry\src\index.crates.io-6f17d22bba15001f\aws-smithy-xml-0.38.0\src\unescape.rs:
