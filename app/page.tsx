@@ -42,7 +42,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-background dark:bg-background">
+    <div className="bg-background dark:bg-background mainpage">
       <Head>
         <title>Luke Friedrichs' Portfolio</title>
         <meta name="description" content="Luke Friedrichs - Portfolio" />
