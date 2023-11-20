@@ -20,7 +20,7 @@ const Navbar = ({
     <nav className="px-4 fixed top-0 z-10 pt-2 w-full flex items-center justify-between border-b-2 border-gray-600 pb-2">
       <div>
         <Avatar>
-          <AvatarImage src="/images/me_avatar.png" />
+          <AvatarImage src="https://github.com/LckyLke/lukefriedrichs/blob/master/images/me_avatar.png?raw=true" />
           <AvatarFallback>LF</AvatarFallback>
         </Avatar>
       </div>
