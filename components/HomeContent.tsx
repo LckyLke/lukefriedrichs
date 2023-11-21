@@ -9,7 +9,7 @@ import TextGrowOnHover from './TextGrowOnHover';
 const HomeContent = () => {
   return (
     <SectionWrapper id="home">
-      <section className="flex flex-col items-center justify-center min-h-screen text-gray-800">
+      <section className="flex flex-col items-center justify-center min-h-screen ">
         <div className="text-6xl font-bold flex flex-col ">
           <TextGrowOnHover text="Hello world, " />
           <TextGrowOnHover text="I'm Luke Friedrichs" />
@@ -17,7 +17,7 @@ const HomeContent = () => {
         <div className="mt-4 text-xl">
           <TextGrowOnHover
             text="
-          Web Developer | Computer Science Graduate 
+          Web Developement | Computer Science Student
           "
           />
         </div>
