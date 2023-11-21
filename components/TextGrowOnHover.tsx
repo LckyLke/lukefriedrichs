@@ -1,10 +1,14 @@
 import React, { useRef, useEffect } from 'react';
 
 interface TextGrowOnHoverProps {
+  className?: string;
   text: string;
 }
 
-const TextGrowOnHover: React.FC<TextGrowOnHoverProps> = ({ text }) => {
+const TextGrowOnHover: React.FC<TextGrowOnHoverProps> = ({
+  text,
+  className,
+}) => {
   const textRef = useRef<HTMLDivElement>(null);
 
   const applyStyle = (element: Element | null, scale: number) => {
@@ -46,7 +50,7 @@ const TextGrowOnHover: React.FC<TextGrowOnHoverProps> = ({ text }) => {
   return (
     <div ref={textRef} className="grow-text">
       {text.split('').map((char, index) => (
-        <span key={index} className="grow-letter">
+        <span key={index} className={'grow-letter ' + className}>
           {char === ' ' ? '\u00A0' : char}
         </span>
       ))}

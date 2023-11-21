@@ -175,7 +175,7 @@ body {
 }
 
 .animated-border {
-    border-bottom: 3px solid blue; /* Set your desired color and thickness */
+    border-bottom: 3px solid #0174BE; /* Set your desired color and thickness */
     width: 100%;
     animation: slideIn 2s ease-out; /* Adjust time as you like */
 }
@@ -183,4 +183,8 @@ body {
 @keyframes slideIn {
     from { width: 0; }
     to { width: 100%; }
+}
+
+.specialTextColor {
+  color: #0174BE;
 }
