@@ -18,7 +18,7 @@ const Navbar = ({
 
   return (
     <div>
-      <nav className="px-4  z-10 pt-2 w-full flex items-center justify-between  pb-2">
+      <nav className="px-4  z-10 pt-2 w-full flex items-center justify-between pb-2  ">
         <div className="flex ">
           <Avatar>
             <AvatarImage src="https://avatars.githubusercontent.com/u/61435401?v=4" />

@@ -30,11 +30,33 @@ export default function Home() {
     setSection(order[previousIndex]);
     scrollToSection(order[previousIndex])();
   };
+  const [isDisabled, setIsDisabled] = useState(false);
+
+  // Handle button click
+  const handleClick = (sectionNavigation: () => void) => {
+    if (isDisabled) {
+      return;
+    }
+    sectionNavigation(); // Call the original onClick function
+
+    setIsDisabled(true); // Disable button
+
+    // Re-enable the button after 1 second
+    setTimeout(() => setIsDisabled(false), 950);
+  };
+
   //returns a function that, when excuted, to the sectionId passed as parameter
   const scrollToSection = (sectionId: SectionType) => () => {
     const sectionElement = document.getElementById(sectionId);
     if (sectionElement) {
-      sectionElement.scrollIntoView({ behavior: 'smooth' });
+      sectionElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      setTimeout(() => {
+        sectionElement.scrollIntoView();
+        setTimeout(() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, 50);
+      }, 900); //todo: remove this bad solution maybe?
       setSection(sectionId);
     } else {
       console.warn(`Element with ID '${sectionId}' not found.`);
@@ -57,13 +79,13 @@ export default function Home() {
       </main>
       <button
         className="fixed left-4 top-1/2 transform -translate-y-1/2 z-50 p-2 rounded-full wiggle"
-        onClick={previousSection}
+        onClick={() => handleClick(previousSection)}
       >
         <AiOutlineArrowLeft size={ARROW_SIZE} />
       </button>
       <button
         className="fixed right-4 top-1/2 transform -translate-y-1/2 z-50  p-2 rounded-full wiggle"
-        onClick={nextSection}
+        onClick={() => handleClick(nextSection)}
       >
         <AiOutlineArrowRight size={ARROW_SIZE} />
       </button>

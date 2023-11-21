@@ -117,6 +117,7 @@ body::-webkit-scrollbar {
 /* For IE and Edge */
 body {
     -ms-overflow-style: none;
+    overflow-y: hidden;
 }
 
 /* For Firefox */
