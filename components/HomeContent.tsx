@@ -3,7 +3,6 @@ import SectionWrapper from './SectionWrapper';
 import Image from 'next/image';
 import me from '../images/me.png';
 import { Canvas } from '@react-three/fiber';
-import ThreeDText from './ThreeDText';
 import TextGrowOnHover from './TextGrowOnHover';
 const HomeContent = () => {
   return (
