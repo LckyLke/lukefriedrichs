@@ -28,7 +28,7 @@ const Navbar = ({
     <div>
       <nav className="px-14  z-10 pt-2 w-full flex items-end justify-between pb-2 ">
         <ul className=" flex  justify-around w-5/12">
-          <HoverCard className="hover:underline">
+          <HoverCard>
             <HoverCardTrigger asChild>
               <a
                 href={'https://github.com/LckyLke/lukefriedrichs'}
