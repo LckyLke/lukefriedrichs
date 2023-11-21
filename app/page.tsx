@@ -78,13 +78,13 @@ export default function Home() {
         <Contact />
       </main>
       <button
-        className="fixed left-4 top-1/2 transform -translate-y-1/2 z-50 p-2 rounded-full wiggle"
+        className="fixed left-14 top-1/2 transform -translate-y-1/2 z-50 p-2 rounded-full wiggle"
         onClick={() => handleClick(previousSection)}
       >
         <AiOutlineArrowLeft size={ARROW_SIZE} />
       </button>
       <button
-        className="fixed right-4 top-1/2 transform -translate-y-1/2 z-50  p-2 rounded-full wiggle"
+        className="fixed right-14 top-1/2 transform -translate-y-1/2 z-50  p-2 rounded-full wiggle"
         onClick={() => handleClick(nextSection)}
       >
         <AiOutlineArrowRight size={ARROW_SIZE} />

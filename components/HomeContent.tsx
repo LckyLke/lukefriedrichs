@@ -10,9 +10,9 @@ const HomeContent = () => {
   return (
     <SectionWrapper id="home">
       <section className="flex flex-col items-center justify-center min-h-screen text-gray-800">
-        <div className="text-6xl font-bold">
-          <TextGrowOnHover text="Hello world, I'm" />
-          <TextGrowOnHover text="Luke Friedrichs" />
+        <div className="text-6xl font-bold flex flex-col ">
+          <TextGrowOnHover text="Hello world, " />
+          <TextGrowOnHover text="I'm Luke Friedrichs" />
         </div>
         <div className="mt-4 text-xl">
           <TextGrowOnHover
@@ -22,21 +22,12 @@ const HomeContent = () => {
           />
         </div>
       </section>
-      <Canvas>
+      {/*  <Canvas>
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
         <Box position={[0, 0, 0]} />
       </Canvas>
-      <div className="image-container">
-        <Image
-          src={me}
-          alt="Picture of me"
-          width={450}
-          height={600}
-          quality={100}
-          className=" "
-        />
-      </div>
+  */}
     </SectionWrapper>
   );
 };

@@ -5,6 +5,14 @@ import { SectionType } from '@/types/types';
 import { Switch } from '../ui/switch';
 import { useTheme } from 'next-themes';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from '@/components/ui/hover-card';
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+
+const ICON_SIZE: number = 26;
 
 const Navbar = ({
   activeSection,
@@ -18,18 +26,27 @@ const Navbar = ({
 
   return (
     <div>
-      <nav className="px-4  z-10 pt-2 w-full flex items-center justify-between pb-2  ">
-        <div className="flex ">
-          <Avatar>
-            <AvatarImage src="https://avatars.githubusercontent.com/u/61435401?v=4" />
-            <AvatarFallback>LF</AvatarFallback>
-          </Avatar>
-          <div className="">
-            <div>Luke</div>
-            <div>Friedrichs</div>
-          </div>
-        </div>
-        <ul className=" flex  justify-around w-5/6">
+      <nav className="px-14  z-10 pt-2 w-full flex items-end justify-between pb-2 ">
+        <ul className=" flex  justify-around w-5/12">
+          <HoverCard className="hover:underline">
+            <HoverCardTrigger asChild>
+              <a
+                href={'https://github.com/LckyLke/lukefriedrichs'}
+                target="_blank"
+              >
+                <div className="flex items-center">
+                  <Avatar>
+                    <AvatarImage src="https://avatars.githubusercontent.com/u/61435401?v=4" />
+                    <AvatarFallback>LF</AvatarFallback>
+                  </Avatar>
+                  <span className=" ml-1">@LckyLke</span>
+                </div>
+              </a>
+            </HoverCardTrigger>
+            <HoverCardContent>
+              The React Framework – created and maintained by @vercel.
+            </HoverCardContent>
+          </HoverCard>
           <Button
             text={'Home'}
             onClick={scrollToSection('home')}
@@ -51,18 +68,32 @@ const Navbar = ({
             active={activeSection == 'contact'}
           />
         </ul>
-        <Switch
-          checked={checked}
-          onCheckedChange={() => {
-            setChecked(!checked);
-            if (theme == 'dark') {
-              setTheme('light');
-              return;
-            }
-            setTheme('dark');
-            console.log('switched!');
-          }}
-        />
+        <div className="flex justify-between w-1/6">
+          <a href="https://www.instagram.com/luke_0206/" target="_blank">
+            <FaInstagram size={ICON_SIZE} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/luke-friedrichs-b40a391aa"
+            target="_blank"
+          >
+            <FaLinkedin size={ICON_SIZE} />
+          </a>
+          <a href="https://github.com/LckyLke/" target="_blank">
+            <FaGithub size={ICON_SIZE} />
+          </a>
+          <Switch
+            checked={checked}
+            onCheckedChange={() => {
+              setChecked(!checked);
+              if (theme == 'dark') {
+                setTheme('light');
+                return;
+              }
+              setTheme('dark');
+              console.log('switched!');
+            }}
+          />
+        </div>
       </nav>
       <div className="animated-border relative"></div>
     </div>
