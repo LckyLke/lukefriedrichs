@@ -162,6 +162,15 @@ body {
   cursor: pointer;
 }
 
+@keyframes popEffect {
+  to { visibility: visible; }
+}
+
+.type-letter {
+  visibility: hidden; /* Start hidden */
+  animation: popEffect .1s ease forwards;
+}
+
 @keyframes activeWiggle {
   0%, 100% { transform: rotate(-3deg) translateY(-50%); }
   50% { transform: rotate(3deg) translateY(-50%); }
@@ -188,3 +197,16 @@ body {
 .specialTextColor {
   color: #0174BE;
 }
+
+@keyframes blinkEffect {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.pulsing-dot {
+  opacity: 0;
+  display: inline-block;
+  margin-left: 5px;
+  animation: blinkEffect 1.2s infinite; /* Blinking effect */
+}
+

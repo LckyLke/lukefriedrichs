@@ -39,12 +39,17 @@ const Navbar = ({
                     <AvatarImage src="https://avatars.githubusercontent.com/u/61435401?v=4" />
                     <AvatarFallback>LF</AvatarFallback>
                   </Avatar>
-                  <span className=" ml-1">@LckyLke</span>
+
+                  <span className="ml-1">@</span>
+                  <span className="hover:underline">LckyLke</span>
                 </div>
               </a>
             </HoverCardTrigger>
-            <HoverCardContent>
-              The React Framework – created and maintained by @vercel.
+            <HoverCardContent className="flex items-center">
+              <FaGithub />
+              <a href="" target="_blank" className="ml-2">
+                {'repo of this project ->'}
+              </a>
             </HoverCardContent>
           </HoverCard>
           <Button
