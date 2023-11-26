@@ -68,7 +68,9 @@ const TextGrowOnHover: React.FC<TextGrowOnHoverProps> = ({
       ))}
       {showPulsingDot && (
         <span
-          style={{ animationDelay: `${totalDuration}s` }} // Delay the start of the dot's animation
+          style={{
+            animationDelay: `${totalDuration + timeBetweenLetters * 3}s`,
+          }} // Delay the start of the dot's animation
           className={'pulsing-dot grow-letter ' + className}
         >
           {'|'}
