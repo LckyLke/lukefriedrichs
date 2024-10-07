@@ -9,6 +9,7 @@ import { useState, useEffect } from 'react';
 import { SectionType } from '@/types/types';
 import Contact from '@/components/Contact';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+import ChatPopup from '@/components/ChatPopup';
 
 const ARROW_SIZE = '3em';
 
@@ -89,6 +90,7 @@ export default function Home() {
       >
         <AiOutlineArrowRight size={ARROW_SIZE} />
       </button>
+      <ChatPopup username="Luke Friedrichs" />
     </div>
   );
 }
